@@ -1,24 +1,69 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta name="google" value="notranslate">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge, chrome=1">
     <title>까지</title>
+    <style>
+      html, body {
+        background-color: #fff;
+        color: #000;
+      }
+    </style>
   </head>
   <body>
+    <!-- IMPORT U.IO -->
+    <script src="UPPERCASE.IO-BROWSER-PACK/IMPORT.js"></script>
+    <script>
+      // not use push state
+      history.pushState = undefined;
+    
+      CONFIG.webServerPort = 8200; // 새병원 서버포트로 수정
+      CONFIG.defaultBoxName = 'KkajiServer';
 
-    <!--IMPORT MODEL-->
+      //BROWSER_CONFIG.host = 'bloom.beauty-care.co.kr'; // 새병원 네임서버 이름으로 수정
+      BROWSER_CONFIG.host = 'localhost';
+      BROWSER_CONFIG.port = 8200; // 새병원 서버포트로 수정
 
-    <!--IMPORT CONTROLL-->
+      BROWSER_CONFIG.fixScriptsFolderPath = 'UPPERCASE.IO-BROWSER-PACK/UPPERCASE.JS-BROWSER-FIX';
+      BROWSER_CONFIG.fixTransportScriptsFolderPath = 'UPPERCASE.IO-BROWSER-PACK/UPPERCASE.IO-TRANSPORT/R';
+      
+      BROWSER_CONFIG.Yogurt = {
+        toolbarColor : '#fff',
+        toolbarTextColor : '#a19860',
+        bottomBarColor : '#323232',
+        bottomBarTextColor : '#706B6B'
+      };
+      BROWSER_CONFIG.Yogurt2 = {
+        toolbarColor : '#fff',
+        toolbarTextColor : '#a19860',
+        bottomBarColor : '#323232',
+        bottomBarTextColor : '#706B6B'
+      };
+      CONFIG.Facebook = {
+        appId : '876236172432024'
+      };
+      
+      BOX('UUI');
+      BOX('UANI');
+      BOX('Yogurt');
+      BOX('Yogurt2');
+      BOX('Facebook');
+    </script>
+    <!-- BOOT -->
 
-    <!--IMPORT VIEW-->
-    <script scr='VIEW/List.js'></script>
-    <script scr='VIEW/Form.js'></script>
+    <!-- IMPORT DESIGN -->
+
+    <!-- IMPORT NODE -->
+
+    <!-- IMPORT VIEW -->
+    <script src="VIEW/List.js"></script>
+    <script src="VIEW/Form.js"></script>
 
     <!-- RUN -->
-    <script scr='MAIN.js'></script>
+    <script src="MAIN.js"></script>
 
-    <p>까지 어플리케이션</p>
   </body>
 </html>

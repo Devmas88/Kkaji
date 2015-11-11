@@ -1,4 +1,4 @@
-Kkaji.List = CLASS({
+KkajiServer.List = CLASS({
 
 	preset : function() {
 		'use strict';
