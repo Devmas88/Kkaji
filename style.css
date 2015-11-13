@@ -1,0 +1,54 @@
+/* 
+ *
+ * global 
+ *
+ */
+
+
+
+
+/* 
+ *
+ * header 
+ *
+ */
+header {
+	width: 100%;
+	height: 50px;
+}
+
+
+/* 
+ *
+ * article 
+ *
+ */
+#add_kkaji {
+	width: 30px;
+	height: 30px;
+	float: right;
+}
+.kkaji_item {
+	height: 70px;
+	background: #333;
+	margin: 10px 0px;
+}
+.item_catagory {
+	width: 20%;
+	float: left;
+}
+.item_title {
+	width: 60%;
+	float: left;
+}
+.item_duedate {
+	width: 20%;
+	float: left;
+}
+
+
+/* 
+ *
+ * footer 
+ *
+ */
